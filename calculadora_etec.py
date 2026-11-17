@@ -16,7 +16,6 @@ class Calculadora:
         # Texto da conta digitada até agora; começa vazio
         self.expressao = ""
 
-        # Visor
         # Cria o campo de texto que funciona como visor
         self.visor = tk.Entry(
             janela, font=("Arial", 24), justify="right",  # janela pai, fonte Arial 24, texto alinhado à direita
@@ -26,7 +25,6 @@ class Calculadora:
         self.visor.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
         # Botões (texto de cada linha)
-        # Lista de listas: cada lista interna é uma linha de botões
         botoes = [
             ["C", "(", ")", "/"],  # linha 1: limpar, parênteses e divisão
             ["7", "8", "9", "*"],  # linha 2: números e multiplicação
